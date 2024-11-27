@@ -1,8 +1,10 @@
 ---
 sidebar_position: 2
 ---
- # Componentes Principales del Patron
- ## 1. Contexto (Context)
+ # Estructura UML
+![Diagrama](./img/diagrama.png)
+
+## 1. Contexto (Context)
 Es la clase que utiliza una estrategia. Mantiene una referencia a una instancia de la interfaz de estrategia y delega el comportamiento a esa instancia.
     - Responsabilidad: No implementa directamente las variantes del algoritmo, sino que las delega a la estrategia seleccionada.
     - Ejemplo en un sistema de pago: Una clase PaymentProcessor que selecciona una estrategia de pago como CreditCardPayment o PayPalPayment.
@@ -67,8 +69,3 @@ processor.processPayment(100); // Usa ZIP por defecto
 processor.strategy = rarStrategy;
 processor.processPayment(100); // Usa RAR ahora
 ```
-## Interacción entre los Componentes
-- El cliente crea una instancia de una estrategia concreta.
-- El contexto se inicializa con esa estrategia concreta (o se le asigna en tiempo de ejecución).
-- El contexto llama al método de la estrategia a través de la interfaz común.
-- La estrategia concreta ejecuta su lógica específica.
