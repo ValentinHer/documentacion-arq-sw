@@ -6,7 +6,7 @@ sidebar_position: 1
 
 El patrón de diseño Observer permite observar los cambios producidos por un objeto, de esta forma, cada cambio que afecte el estado del objeto observado lanzará una notificación a los observadores; a esto se le conoce como Publicador-Suscriptor. Observer es uno de los principales patrones de diseño utilizados en interfaces gráficas de usuario (GUI), ya que permite desacoplar al componente gráfico de la acción a realizar.
 
-![Patron Observer](/img/observer.png)
+![Patron Observer](./img/observer.png)
 
 ## Cuando aplicarlo
 
