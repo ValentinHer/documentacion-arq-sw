@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Concepto
+# KConcepto
 
 El patrón Strategy es un patrón de diseño de comportamiento que permite definir una familia de algoritmos, encapsular cada uno de ellos y hacerlos intercambiables. Esto permite que el comportamiento de un objeto cambie en tiempo de ejecución sin modificar su código.
 
