@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# KConcepto
+# Concepto
 
 El patrón Strategy es un patrón de diseño de comportamiento que permite definir una familia de algoritmos, encapsular cada uno de ellos y hacerlos intercambiables. Esto permite que el comportamiento de un objeto cambie en tiempo de ejecución sin modificar su código.
 
@@ -17,7 +17,7 @@ Este patrón es particularmente útil cuando:
 - Utiliza el patrón Strategy cuando quieras utiliza distintas variantes de un algoritmo dentro de un objeto y poder cambiar de un algoritmo a otro durante el tiempo de ejecución.
 - Utiliza el patrón Strategy cuando tengas muchas clases similares que sólo se diferencien en la forma en que ejecutan cierto comportamiento.
 - Utiliza el patrón para aislar la lógica de negocio de una clase, de los detalles de implementación de algoritmos que pueden no ser tan importantes en el contexto de esa lógica.
-- Utiliza el patrón cuando tu clase tenga un enorme operador condicional que cambie entre distintas variantes del mismo algoritm
+- Utiliza el patrón cuando tu clase tenga un enorme operador condicional que cambie entre distintas variantes del mismo algoritmo
 
 ## Caracteristicas Clave
 - Intercambiabilidad: Permite reemplazar estrategias sin modificar el código cliente.
