@@ -7,7 +7,7 @@ const FeatureList = [
   {
     title: "Observer",
     img: require("@site/static/img/observer.png").default,
-    link: "/docs/intro",
+    link: "/docs/category/patrón-observer",
     description: (
       <>
         Permite definir un mecanismo de suscripción
