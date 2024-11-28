@@ -73,7 +73,6 @@ class RemoteControl {
     }
 }
 ```
-
 ## 5. Client (Cliente)
 Es el responsable de configurar el comando, receptor e invocador.
  - Responsabilidad: Crear objetos de comandos concretos y asignarlos al invocador.
