@@ -8,7 +8,7 @@ sidebar_position: 1
 ## Cuando aplicarlo
 Este se aplica cuando se necesita estructurar un algoritmo con pasos fijos pero que permiten personalización en ciertos detalles, como en procesos repetitivos que requieren consistencia en su flujo general. Es útil para reutilizar código común, mantener estándares y garantizar que las variaciones se implementen de forma controlada, siendo especialmente adecuado en frameworks o procesos estandarizados.
 
-## Caracteristicas
+## Características
 - El método plantilla define un algoritmo general y establece el flujo de ejecución, con algunos pasos específicos delegados a métodos auxiliares, que las subclases pueden sobrescribir.
 - El comportamiento común del algoritmo se mantiene en la clase base, mientras que las subclases implementan solo los detalles específicos.
 - El flujo de control del algoritmo está predefinido en la clase base, y las subclases completan las implementaciones de los pasos definidos.

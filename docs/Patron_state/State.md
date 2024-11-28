@@ -12,7 +12,7 @@ El patrón extrae comportamientos relacionados con el estado, los coloca dentro 
 
 Este se emplea cuando un determinado objeto tiene diferentes estados y también distintas responsabilidades según el estado en que se encuentre en determinado instante. También puede utilizarse para simplificar casos en los que se tiene un complicado y extenso código de decisión que depende del estado del objeto
 
-## Caracteristicas
+## Características
 
 - Encapsulación de estados: Cada estado se representa como una clase separada que implementa una interfaz común, lo que permite encapsular el comportamiento asociado a cada estado.
 - Cambio dinámico de comportamiento:
