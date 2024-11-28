@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Estructura UML
 
-![estructura patron observer](./img/observer-image.png)
+![Estructura UML del Patrón Observer](./img/observer-image.png)
 
 1. El __Notificador__ envía eventos de interés a otros objetos. Esos eventos ocurren cuando el notificador cambia su estado o ejecuta algunos comportamientos. Los notificadores contienen una infraestructura de suscripción que permite a nuevos y antiguos suscriptores abandonar la lista.
 
