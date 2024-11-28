@@ -19,6 +19,7 @@ class PaymentProcessor {
     }
 }
 ```
+
 ## 2. Interfaz de Estrategia (Strategy Interface)
 Define un contrato común para todas las estrategias concretas. Esto asegura que el contexto pueda usar diferentes estrategias de manera intercambiable.
  - Responsabilidad: Especificar el método (o métodos) que deben implementar todas las estrategias concretas.

@@ -9,7 +9,7 @@ Este patrón es ideal para sistemas en los que:
 - Se necesita registrar acciones para poder repetirlas o deshacerlas.
 - Se desea desacoplar el objeto que emite una solicitud del objeto que la ejecuta.
 - Las solicitudes deben ser tratadas como objetos independientes que puedan ser manipulados (almacenados, encolados o enviados a través de la red).
-![Imagen](./img/image.png)
+![Imagen](./img/imagen.png)
 
 ## Cuando aplicarlo
 -  Utiliza el patrón Command cuando quieras parametrizar objetos con operaciones.
