@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 
 # Estructura UML
-![Diagrama UML de State](./img/State_UML.png)
+![Diagrama UML de State](./Img/State_UML.png)
 
 ## Participantes 
 - **Context:** Este integrante define la interfaz con el cliente. Mantiene una instancia de ConcreteState (Estado Concreto) que define su estado actual.
