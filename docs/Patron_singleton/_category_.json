@@ -1,6 +1,6 @@
 {
-    "label": "Patrón State",
-    "position": 4,
+    "label": "Patrón Singelton",
+    "position": 7,
     "link": {   
         "type": "generated-index"
     }
