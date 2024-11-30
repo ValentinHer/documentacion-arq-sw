@@ -2,46 +2,39 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Patrones de Diseño de Comportamiento
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Los patrones de diseño de comportamiento son soluciones reutilizables que abordan problemas comunes relacionados con las interacciones entre objetos y cómo distribuyen responsabilidades en un sistema. Estos patrones se enfocan en la comunicación dinámica entre los componentes de un programa, promoviendo un diseño flexible, desacoplado y escalable.
 
-## Getting Started
+## Conceptos clave de los patrones de diseño de comportamiento
 
-Get started by **creating a new site**.
+1. __Colaboración entre objetos__:
+Los patrones de comportamiento definen cómo los objetos colaboran y se comunican para lograr un objetivo específico.
+Buscan establecer relaciones claras que promuevan un diseño ordenado y eficiente.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+2. __Desacoplamiento__:
+Estos patrones tienden a minimizar las dependencias entre objetos, lo que facilita el mantenimiento, la evolución del sistema y la reutilización del código.
 
-### What you'll need
+3. __Distribución de responsabilidades__:
+Los patrones de comportamiento ayudan a distribuir de manera efectiva las responsabilidades entre los objetos, asegurando que cada uno tenga un rol bien definido.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+4. __Interacción dinámica__:
+Abordan cómo se envían mensajes, comandos o eventos entre objetos, gestionando el flujo de datos en tiempo de ejecución.
 
-## Generate a new site
+5. __Extensibilidad__:
+Facilitan la adición de nuevas funcionalidades sin necesidad de modificar el código existente, siguiendo el principio Open/Closed (abierto para extensión, cerrado para modificación).
 
-Generate a new Docusaurus site using the **classic template**.
+## Características generales de los patrones de comportamiento
 
-The classic template will automatically be added to your project after you run the command:
+1. __Flujo de control__:
+- Permiten gestionar cómo y cuándo se ejecutan ciertas acciones dentro del sistema.
+- Pueden delegar tareas a otros objetos o gestionar estados cambiantes.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+2. __Separación de intereses__:
+- Separan la lógica del sistema principal de detalles secundarios como la interacción entre objetos o la implementación de algoritmos específicos.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+3. __Reducción de acoplamiento__:
+- Los objetos no necesitan conocer los detalles de otros objetos con los que interactúan, lo que permite un diseño más modular.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+4. __Facilitan cambios futuros__:
+- Al establecer patrones claros, se facilita la adaptación del sistema a nuevos requisitos o tecnologías sin romper el diseño original.
