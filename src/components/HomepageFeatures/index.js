@@ -1,49 +1,98 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import clsx from "clsx";
+import Heading from "@theme/Heading";
+import styles from "./styles.module.css";
+import Link from "@docusaurus/Link";
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: "Observer",
+    img: require("@site/static/img/observer.png").default,
+    link: "/docs/category/patrón-observer",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Permite definir un mecanismo de suscripción
+         para notificar a varios objetos sobre cualquier evento que le suceda al objeto que están observando.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: "Strategy",
+    img: require("@site/static/img/strategy.png").default,
+    link: "/docs/category/patrón-strategy",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Permite definir una familia de algoritmos, colocar cada uno de ellos 
+        en una clase separada y hacer sus objetos intercambiables.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: "Command",
+    img: require("@site/static/img/command-es.png").default,
+    link: "/docs/category/patrón-command",
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Convierte una solicitud en un objeto independiente que contiene toda la información sobre la solicitud. 
+        Esta transformación te permite parametrizar los métodos con diferentes solicitudes.
+      </>
+    ),
+  },
+  {
+    title: "State",
+    img: require("@site/static/img/state-es.png").default,
+    link: "/docs/category/patrón-state",
+    description: (
+      <>
+        Permite a un objeto alterar su comportamiento cuando su estado interno cambia. 
+        Parece como si el objeto cambiara su clase.
+      </>
+    ),
+  },
+  {
+    title: "Template Method",
+    img: require("@site/static/img/template-method.png").default,
+    link: "/docs/category/patrón-template-method",
+    description: (
+      <>
+        Define el esqueleto de un algoritmo en la superclase pero permite que las subclases sobrescriban
+         pasos del algoritmo sin cambiar su estructura.
+      </>
+    ),
+  },
+  {
+    title: "Visitor",
+    img: require("@site/static/img/visitor.png").default,
+    link: "/docs/category/patrón-visitor",
+    description: (
+      <>
+        Permite separar algoritmos de los objetos sobre los que operan.
+      </>
+    ),
+  },
+  {
+    title: "Singleton",
+    img: require("@site/static/img/singleton.png").default,
+    link: "/docs/category/patrón-singleton",
+    description: (
+      <>
+        Permite asegurarnos de que una clase tenga una única instancia, a la vez que proporciona un punto de acceso global a dicha instancia.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ img, title, link, description }) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")} style={{ marginTop: 30 }}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img className={styles.featureSvg} src={img} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+        <p style={{textAlign: 'justify'}}>{description}</p>
+        <Link className="button button--primary button--md" to={link}>
+          Aprender Más 🔗
+        </Link>
       </div>
     </div>
   );
@@ -51,9 +100,9 @@ function Feature({Svg, title, description}) {
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
+    <section className={styles.features} >
       <div className="container">
-        <div className="row">
+        <div className="row" style={{justifyContent: 'center'}}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
