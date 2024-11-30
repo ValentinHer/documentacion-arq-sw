@@ -18,7 +18,7 @@ const FeatureList = [
   {
     title: "Strategy",
     img: require("@site/static/img/strategy.png").default,
-    link: "/docs/intro",
+    link: "/docs/category/patrón-strategy",
     description: (
       <>
         Permite definir una familia de algoritmos, colocar cada uno de ellos 
@@ -29,18 +29,18 @@ const FeatureList = [
   {
     title: "Command",
     img: require("@site/static/img/command-es.png").default,
-    link: "/docs/intro",
+    link: "/docs/category/patrón-command",
     description: (
       <>
         Convierte una solicitud en un objeto independiente que contiene toda la información sobre la solicitud. 
-        Esta transformación te permite parametrizar los métodos con diferentes solicitudes,
+        Esta transformación te permite parametrizar los métodos con diferentes solicitudes.
       </>
     ),
   },
   {
     title: "State",
     img: require("@site/static/img/state-es.png").default,
-    link: "/docs/intro",
+    link: "/docs/category/patrón-state",
     description: (
       <>
         Permite a un objeto alterar su comportamiento cuando su estado interno cambia. 
@@ -51,21 +51,31 @@ const FeatureList = [
   {
     title: "Template Method",
     img: require("@site/static/img/template-method.png").default,
-    link: "/docs/intro",
+    link: "/docs/category/patrón-template-method",
     description: (
       <>
         Define el esqueleto de un algoritmo en la superclase pero permite que las subclases sobrescriban
-         pasos del algoritmo sin cambiar su estructura
+         pasos del algoritmo sin cambiar su estructura.
       </>
     ),
   },
   {
     title: "Visitor",
     img: require("@site/static/img/visitor.png").default,
-    link: "/docs/intro",
+    link: "/docs/category/patrón-visitor",
     description: (
       <>
         Permite separar algoritmos de los objetos sobre los que operan.
+      </>
+    ),
+  },
+  {
+    title: "Singleton",
+    img: require("@site/static/img/singleton.png").default,
+    link: "/docs/category/patrón-singleton",
+    description: (
+      <>
+        Permite asegurarnos de que una clase tenga una única instancia, a la vez que proporciona un punto de acceso global a dicha instancia.
       </>
     ),
   },
@@ -90,9 +100,9 @@ function Feature({ img, title, link, description }) {
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
+    <section className={styles.features} >
       <div className="container">
-        <div className="row">
+        <div className="row" style={{justifyContent: 'center'}}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

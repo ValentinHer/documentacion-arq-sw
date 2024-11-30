@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Estructura UML
 ![Diagrama UML de Template Method](./img/template-method.png)
 
