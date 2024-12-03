@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
  # Estructura UML
-![Diagrama](./img/image.png)
+![Diagrama](./img/imagen.png)
 
 ## 1. 
 
