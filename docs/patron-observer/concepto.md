@@ -31,7 +31,8 @@ Cuando necesitas que las vistas se actualicen automáticamente al cambiar el mod
 - Cuando necesitas manejar notificaciones en tiempo real:
 Si deseas enviar actualizaciones o cambios a los usuarios o sistemas inmediatamente después de que ocurren.
 
-## Caraterísticas
+## Características
+
 - **Relación uno-a-muchos**:
 Define una relación entre un objeto _sujeto_ (subject) y múltiples _observadores_ (observers).
 Cuando el sujeto cambia de estado, notifica a todos los observadores suscritos.
